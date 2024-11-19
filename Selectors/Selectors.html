@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Element Selector */
+        h1{
+           color:blueviolet;
+        }
+         /* Class Selector */
+        .ex{
+            padding:10px;
+        }
+         /* id Selector */
+         #heading{
+            color: aqua;
+        }
+        /* Universal Selector */
+        *{
+            background-color: burlywood;
+            padding: 0%;
+           margin-left: auto;
+        }
+        /* Descendant Selector */
+        .el p{
+            color: rgb(205, 50, 58);
+        }
+        /* Child Selector */
+        ul>li{
+            color: green
+        }
+        /* Attribute Selector */
+        input[type="text"] {
+           color: black;
+            border-radius: 5px;
+        }
+        /* Grouping Selector */
+        h2,h3,h4{
+           color: rgba(240, 0, 144, 0.938);
+        }
+        /* Pseudo-Class Selector
+        hover */
+        .el:hover {
+text-align: center;
+}
+/*First-Child*/
+li:first-child {
+  font-weight: bold;
+}
+/*n-th Child */
+li:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+
+    </style>
+</head>
+<body>
+    <div class="ex">
+        <h1>HTML</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam fugit, quas ipsam similique nihil velit facere ea, minima, maiores numquam sapiente deleniti culpa consequuntur officia! Minus quaerat ipsum quidem. Fugit.</p>
+        <ul>
+            <li>Ruben</li>
+            <li>Rakesh</li>
+            <li>Anil</li>
+            <li>Akshay</li>
+            <li>Narendra</li>
+        </ul>
+    </div>
+    <div class="el">
+        <h1 id="heading">HTML</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam fugit, quas ipsam similique nihil velit facere ea, minima, maiores numquam sapiente deleniti culpa consequuntur officia! Minus quaerat ipsum quidem. Fugit.</p>
+        <label for="text">Text Input:</label>
+        <input type="text" placeholder="Enter text"/><br></br>
+    </div>
+    <h2>Home</h2>
+    <h3>Home1</h3>
+    <h4>Home2</h4>
+
+</body>
+</html>
